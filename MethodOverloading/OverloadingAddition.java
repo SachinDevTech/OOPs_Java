@@ -35,4 +35,15 @@ public class OverloadingAddition {
     public String add(String s1, String s2, String s3) {
         return s1 + s2 + s3;
     }
+
+    //based on the order of parameters
+    public String add(int age, String name) {
+        String s = "Age is: " + age + " and name is: " + name;
+        return s;
+    }
+
+    public String add(String name, int age) {
+        String s = "Name is: " + name + " and age is: " + age;
+        return s;
+    }
 }
